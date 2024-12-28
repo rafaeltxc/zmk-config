@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &led_strip { chain-length = <27>; };
 
@@ -29,10 +30,10 @@
 
         Colemak {
             bindings = <
-&kp Q  &kp W                  &kp F  &kp P         &kp B  &kp ESCAPE    &kp SQT        &kp J  &kp L         &kp U      &kp Y                        &kp BACKSPACE
-&kp A  &hold_tap LCTRL LS(R)  &kp S  &kp T         &kp G  &kp TAB       &kp SEMICOLON  &kp N  &kp N         &kp E      &hold_tap RCTRL I            &kp O
-&kp Z  &hold_tap LSHIFT X     &kp C  &kp D         &kp V  &kp COMMA     &kp PERIOD     &kp K  &kp H         &kp GRAVE  &hold_tap RIGHT_SHIFT SLASH  &kp RIGHT_ALT
-                                     &kp LEFT_ALT  &mo 1  &kp SPACE     &kp ENTER      &mo 2  &kp LEFT_ALT
+&kp Q  &kp W               &kp F  &kp P         &kp B  &kp ESCAPE    &kp SQT        &kp J  &kp L         &kp U      &kp Y                        &kp BACKSPACE
+&kp A  &hold_tap LCTRL R   &kp S  &kp T         &kp G  &kp TAB       &kp SEMICOLON  &kp N  &kp N         &kp E      &hold_tap RCTRL I            &kp O
+&kp Z  &hold_tap LSHIFT X  &kp C  &kp D         &kp V  &kp COMMA     &kp PERIOD     &kp K  &kp H         &kp GRAVE  &hold_tap RIGHT_SHIFT SLASH  &kp RIGHT_ALT
+                                  &kp LEFT_ALT  &mo 1  &kp SPACE     &kp ENTER      &mo 2  &kp LEFT_ALT
             >;
         };
 
@@ -59,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none       &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &none    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR      &kp RPAR         &kp BSPC
-&none  &kp LCTRL   &trans      &trans        &trans        &trans          &none    &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &kp LSHIFT  &trans      &trans        &trans        &trans          &none    &kp LEFT_BRACE    &kp RIGHT_BRACE    &none         &none            &kp RIGHT_ALT
-                               &none         &trans        &kp SPACE       &kp RET  &trans            &none
+&rgb_ug RGB_ON   &rgb_ug RGB_OFF  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &none    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR      &kp RPAR         &kp BSPC
+&rgb_ug RGB_BRI  &kp LCTRL        &trans      &none         &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &none    &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&rgb_ug RGB_BRD  &kp LSHIFT       &trans      &trans        &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &none    &kp LEFT_BRACE    &kp RIGHT_BRACE    &none         &none            &kp RIGHT_ALT
+                                              &none         &trans           &kp SPACE          &kp RET  &trans            &none
             >;
         };
     };
