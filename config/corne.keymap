@@ -31,7 +31,7 @@
         Colemak {
             bindings = <
 &kp Q  &kp W               &kp F  &kp P         &kp B  &kp ESCAPE    &kp SQT        &kp J  &kp L         &kp U      &kp Y                        &kp BACKSPACE
-&kp A  &hold_tap LCTRL R   &kp S  &kp T         &kp G  &kp TAB       &kp SEMICOLON  &kp N  &kp N         &kp E      &hold_tap RCTRL I            &kp O
+&kp A  &hold_tap LCTRL R   &kp S  &kp T         &kp G  &kp TAB       &kp SEMICOLON  &kp M  &kp N         &kp E      &hold_tap RCTRL I            &kp O
 &kp Z  &hold_tap LSHIFT X  &kp C  &kp D         &kp V  &kp COMMA     &kp PERIOD     &kp K  &kp H         &kp GRAVE  &hold_tap RIGHT_SHIFT SLASH  &kp RIGHT_ALT
                                   &kp LEFT_ALT  &mo 1  &kp SPACE     &kp ENTER      &mo 2  &kp LEFT_ALT
             >;
