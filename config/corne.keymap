@@ -48,7 +48,7 @@
 &none         &none           &kp TILDE  &kp ASTERISK  &kp AMPERSAND  &kp ASTERISK            &kp EQUAL  &kp N7        &kp N8        &kp N9        &none   &kp BSPC
 &kp CAPSLOCK  &kp LCTRL       &kp CARET  &kp PERCENT   &kp DOLLAR     &kp NON_US_BACKSLASH    &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &trans
 &none         &kp LEFT_SHIFT  &kp HASH   &kp AT_SIGN   &kp EXCL       &kp SLASH               &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp RIGHT_ALT
-                                         &none         &trans         &kp SPACE               &kp RET    &trans        &none
+                                         &kp LEFT_ALT  &trans         &kp SPACE               &kp RET    &trans        &kp LEFT_ALT
             >;
         };
 
@@ -63,7 +63,7 @@
 &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &none    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR      &kp RPAR         &kp BSPC
 &rgb_ug RGB_BRI  &kp LCTRL        &trans      &none         &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &none    &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT_ARROW  &none
 &rgb_ug RGB_BRD  &kp LSHIFT       &trans      &trans        &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &none    &kp LEFT_BRACE    &kp RIGHT_BRACE    &none         &none            &kp RIGHT_ALT
-                                              &none         &trans           &kp SPACE          &kp RET  &trans            &none
+                                              &kp LEFT_ALT  &trans           &kp SPACE          &kp RET  &trans            &kp LEFT_ALT
             >;
         };
     };
