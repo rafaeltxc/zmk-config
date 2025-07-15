@@ -46,10 +46,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &none  &none  &none         &none    &none        &kp EQUAL      &kp N7        &kp N8        &kp N9        &none   &kp BACKSPACE
-&kp LSHFT  &none  &none  &kp HOME      &kp END  &none        &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &kp ENTER
-&kp LCTRL  &none  &none  &none         &none    &none        &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &kp RALT
-                         &kp LEFT_ALT  &none    &kp SPACE    &kp SPACE      &to 3         &kp LALT
+&kp ESC    &none     &none  &none         &none    &none        &kp EQUAL      &kp N7        &kp N8        &kp N9        &none   &kp BACKSPACE
+&kp LSHFT  &kp CAPS  &none  &kp HOME      &kp END  &none        &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &kp ENTER
+&kp LCTRL  &none     &none  &none         &none    &none        &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &kp RALT
+                            &kp LEFT_ALT  &none    &kp SPACE    &kp SPACE      &to 3         &kp LALT
             >;
         };
 
