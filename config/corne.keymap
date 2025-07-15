@@ -29,12 +29,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak {
+        qwerty {
             bindings = <
-&kp ESC        &kp Q                   &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U         &kp Y       &kp MINUS               &kp BACKSPACE
-&kp TAB        &hold_tap LEFT_SHIFT A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E         &kp I       &hold_tap LEFT_SHIFT O  &kp ENTER
-&kp RIGHT_ALT  &hold_tap LCTRL Z       &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA     &kp PERIOD  &hold_tap RCTRL SLASH   &kp RIGHT_ALT
-                                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LEFT_ALT
+&kp TAB    &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LSHFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp CAPS
+                         &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
             >;
         };
 
@@ -46,10 +46,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none          &none      &none  &none         &none    &none        &kp EQUAL      &kp N7        &kp N8        &kp N9        &none   &kp BACKSPACE
-&kp CAPSLOCK   &kp LSHFT  &none  &kp HOME      &kp END  &none        &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &kp ENTER
-&kp RIGHT_ALT  &kp LCTRL  &none  &none         &none    &none        &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &kp RIGHT_ALT
-                                 &kp LEFT_ALT  &none    &kp SPACE    &kp SPACE      &to 3         &kp LEFT_ALT
+&kp ESC    &none  &none  &none         &none    &none        &kp EQUAL      &kp N7        &kp N8        &kp N9        &none   &kp BACKSPACE
+&kp LSHFT  &none  &none  &kp HOME      &kp END  &none        &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &kp ENTER
+&kp LCTRL  &none  &none  &none         &none    &none        &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &none
+                         &kp LEFT_ALT  &none    &kp SPACE    &kp SPACE      &to 3         &kp RALT
             >;
         };
 
@@ -61,10 +61,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none          &none           &kp F9  &kp F8        &kp F7  &kp F12      &kp GRAVE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR      &kp RPAR         &kp DEL
-&none          &kp LEFT_SHIFT  &kp F6  &kp F5        &kp F4  &kp F11      &kp SEMICOLON  &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&kp RIGHT_ALT  &kp LCTRL       &kp F3  &kp F2        &kp F1  &kp F10      &kp SQT        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH     &kp BACKSLASH    &kp RIGHT_ALT
-                                       &kp LEFT_ALT  &to 3   &kp SPACE    &kp SPACE      &none             &kp LEFT_ALT
+&kp ESC    &none  &kp F9  &kp F8        &kp F7  &kp F12      &kp GRAVE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR      &kp RPAR         &kp DEL
+&kp LSHFT  &none  &kp F6  &kp F5        &kp F4  &kp F11      &kp SEMICOLON  &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&kp LCTRL  &none  &kp F3  &kp F2        &kp F1  &kp F10      &kp SQT        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH     &kp BACKSLASH    &kp RIGHT_ALT
+                          &kp LEFT_ALT  &to 3   &kp SPACE    &kp SPACE      &none             &kp RIGHT_ALT
             >;
         };
 
@@ -77,16 +77,16 @@
             >;
         };
 
-        GAMING {
+        gaming {
             bindings = <
-&kp ESC        &none           &kp Q  &kp W         &kp E  &kp R        &none      &none     &kp UP        &none      &none  &none
-&kp TAB        &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F        &none      &kp LEFT  &kp DOWN      &kp RIGHT  &none  &kp ENTER
-&kp RIGHT_ALT  &kp LCTRL       &kp Z  &kp X         &kp C  &kp V        &none      &none     &none         &none      &none  &none
-                                      &kp LEFT_ALT  &mo 5  &kp SPACE    &kp SPACE  &mo 5     &kp LEFT_ALT
+&kp ESC        &none           &kp Q  &kp W         &kp E  &kp R        &none      &none     &kp UP         &none      &none  &none
+&kp TAB        &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F        &none      &kp LEFT  &kp DOWN       &kp RIGHT  &none  &kp ENTER
+&kp RIGHT_ALT  &kp LCTRL       &kp Z  &kp X         &kp C  &kp V        &none      &none     &none          &none      &none  &none
+                                      &kp LEFT_ALT  &mo 5  &kp SPACE    &kp SPACE  &mo 5     &kp RIGHT_ALT
             >;
         };
 
-        GAMING_UTILS {
+        gaming_utils {
             bindings = <
 &none          &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none        &none      &kp N7  &kp N8        &kp N9  &none      &none
 &kp CAPSLOCK   &kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none        &none      &kp N4  &kp N5        &kp N6  &kp LSHFT  &kp ENTER
