@@ -70,7 +70,7 @@
 
         config {
             bindings = <
-&none  &none       &none         &none         &none         &none    &none            &none  &none            &none            &none            &none
+&to 6  &none       &none         &none         &none         &none    &none            &none  &none            &none            &none            &none
 &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &rgb_ug RGB_EFF  &none  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &none
 &none  &none       &none         &none         &none         &none    &rgb_ug RGB_EFR  &none  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &none
                                  &none         &to 0         &none    &none            &to 4  &none
@@ -92,6 +92,15 @@
 &kp CAPSLOCK   &kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none        &none      &kp N4  &kp N5        &kp N6  &kp LSHFT  &kp ENTER
 &kp RIGHT_ALT  &kp LCTRL  &none         &none         &none         &none        &none      &kp N1  &kp N2        &kp N3  &kp LCTRL  &kp RALT
                                         &kp LEFT_ALT  &mo 3         &kp SPACE    &kp SPACE  &to 3   &kp LEFT_ALT
+            >;
+        };
+
+        Colemak {
+            bindings = <
+&kp ESC   &kp Q                   &kp W  &kp F     &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp MINUS               &kp BSPC
+&kp TAB   &hold_tap LEFT_SHIFT A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &hold_tap LEFT_SHIFT O  &kp ENTER
+&kp RALT  &hold_tap LCTRL Z       &kp X  &kp C     &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &hold_tap LCTRL SLASH   &kp RALT
+                                         &kp LALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LALT
             >;
         };
     };
